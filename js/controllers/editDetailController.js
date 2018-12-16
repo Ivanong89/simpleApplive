@@ -34,9 +34,11 @@ alert("Customer Detail Upated");
 };
 
 $scope.deleteCust = function() {
-    if(confirm("Confirm delete customer?"))
-    customerList.customers.splice($scope.customer.custId, 1, 'deleted');
-alert("User Deleted")
+    let cDelete = confirm("Confirm delete customer?");
+    if (cDelete == true)
+    {customerList.customers.splice($scope.customer.custId, 1, 'deleted');
+alert("User Deleted")}
+else {return;}
 };
 
 }]);

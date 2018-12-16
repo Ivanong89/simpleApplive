@@ -13,8 +13,10 @@ console.log($scope.customer)
 
 $scope.deleteCust = function() {
     if(confirm("Confirm delete customer?"))
-    customerList.customers.splice($scope.customer.custId, 1, 'deleted');
-alert("User Deleted")
+    {customerList.customers.splice($scope.customer.custId, 1, 'deleted');
+alert("User Deleted")}
+    else
+    {return;}
 };
 
 }]);

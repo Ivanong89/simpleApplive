@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple App!</title>
+<script type="text/javascript" src="js/vendors/angular.min.js"></script>
+<script type="text/javascript" src="js/vendors/angular-ui-router.js"></script>
+<script type="text/javascript" src="node_modules/moment/moment.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js" integrity="sha256-tW5LzEC7QjhG0CiAvxlseMTs2qJS7u3DRPauDjFJ3zo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css" integrity="sha256-JDBcnYeV19J14isGd3EtnsCQK05d8PczJ5+fvEvBJvI=" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body ng-app="simpleApp">
+    <div class="top-menu container-fluid row">
+        <div class="menu-button col"><a ui-sref="home"><i class="fas fa-user-alt"></i><h5>Customers</h5></a></div>
+        <div class="menu-button col"><a ui-sref="edit"><i class="fas fa-pen-square"></i><h5>Edit Customers</h5></a></div>
+        <div class="menu-button col"><a ui-sref="addCustomer"><i class="fas fa-plus-square"></i><h5>Add Customers</h5></a></div>
+    </div>
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+    <!--Vendors-->
+    <script src="js/app.js"></script>
+    <!--Controllers-->
+<script src="js/controllers/indexController.js"></script>
+<script src="js/controllers/detailController.js"></script>
+<script src="js/controllers/editController.js"></script>
+<script src="js/controllers/editDetailController.js"></script>
+<script src="js/controllers/addCustomer.js"></script>
+    <!--Services-->
+<script src="js/services/customers.js"></script>
+
+
+</body>
+</html>

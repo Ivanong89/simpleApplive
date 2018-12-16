@@ -1,0 +1,51 @@
+html,body {height: 100%;
+width: 100%;}
+
+.top-menu {height: 100px;
+margin: 0 !important;
+padding: 0 !important;}
+
+i.fas {font-size:30px;
+}
+
+.menu-button {text-align: center;
+border: 2px solid #000;
+vertical-align: middle;
+padding: 20px 0;}
+
+.list-container {border-right:2px solid #000;
+height:100%;}
+
+.container {height: 100%;
+margin: 0 !important;
+padding: 0 !important;
+max-width: 1200px !Important;}
+
+.customer-details {height: 100%;
+width:100%;}
+
+.customer-details .row {margin: 10px 20px;}
+
+.customer-details .first-row, .customer-details .forth-row {text-align: center;}
+
+.customer-details .second-row .col, .customer-details .third-row .col {text-align: left;
+padding-left:0px;}
+
+.edit-link {margin-right: 80px;}
+
+.btn {display: inline-block;}
+
+.fifth-row {margin-top: 80px !important;}
+
+.edit-link {background: #32CD32 !important;
+border: none !Important;}
+
+.delete-link {background: #ff0000 !important;
+border: none !important;}
+
+.link-active {color: #fff;
+background: blue;}
+
+.customer-name a:hover {color: red;}
+
+.customer-notes input {width: 100%;}

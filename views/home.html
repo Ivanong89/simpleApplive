@@ -1,0 +1,20 @@
+<div class="container row ">
+    <div class="list-container col-sm-5">
+<table class="customer-list">
+    <tr>
+        <th>
+            Customers
+        </th>
+    </tr>
+    <tr class="customer-name" ng-repeat="customer in customers | filter: '!deleted'">
+        <td><a ui-sref="home.detail({id: {{customer.custId}}})" ui-sref-active="link-active">
+            {{customer.firstName}}
+        </a>
+        </td>
+    </tr>
+</table>
+    </div>
+    <div class="interface col-sm-7">
+<ui-view></ui-view>
+    </div>
+</div>

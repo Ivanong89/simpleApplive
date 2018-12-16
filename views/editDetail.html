@@ -1,0 +1,39 @@
+
+<form class="customer-details" ng-submit="editCustomer()">
+    
+<div class="row second-row">
+    <div class="col customer-first-name">
+        <h3>First Name:</h3>
+        <input type="text" ng-model="customer.firstName"> 
+    </input>
+    </div>
+    <div class="col customer-last-name">
+        <h3>Last Name:</h3>
+        <input type="text" ng-model="customer.lastName"></input>
+    </div>
+</div>
+<div class="row third-row">
+    <div class="col customer-country">
+        <h3>Country:</h3>
+        <input type="text" ng-model="customer.country"></input>
+    </div>
+    <div class="col customer-lastPurchased">
+        <h3>Last Purchase Date:</h3>
+        <input class="form-control" id="date" name="date" placeholder="yyyy-mm-dd" type="text" ng-model="customer.lastPurchased">
+          
+      </div>
+    
+</div>
+<div class="row forth-row">
+    <div class="col customer-notes">
+    <h3>Notes:</h3>
+    <input type="text" ng-model="customer.notes"></input>
+    </div>
+</div>
+<div class="row fifth-row">
+
+    <button class="btn btn-primary edit-link col" type="submit">Save</a>
+    </form>
+        <button class="btn btn-primary delete-link col" type="button" ng-click="deleteCust()">Delete</button>
+    
+</div>
